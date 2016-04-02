@@ -1,0 +1,16 @@
+body{
+  margin: 0;
+}
+
+/* navbar styles */
+nav{
+  border: 3px solid red;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+}
+nav li {
+  flex:3;
+}
+/* navbar styles end */
