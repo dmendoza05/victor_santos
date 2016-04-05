@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  var app = angular.module('pt-directive', []);
+  var app = angular.module('navbar-directive', []);
 
   app.directive('navbar', [function() {
     return {

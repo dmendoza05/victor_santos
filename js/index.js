@@ -3,7 +3,7 @@
 
   var app = angular.module('pt_website', ['ui.router', 'pt_controllers', 'pt-directive']);
 
-  app.config(function($stateProvider, $urlRouterProvider) {
+  app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 
     $stateProvider
       .state("home", {
@@ -24,5 +24,7 @@
       });
 
     $urlRouterProvider.otherwise("/");
+
+    $locationProvider.html5Mode(true);
   }); // end config
 })(); // end closure
