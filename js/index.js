@@ -6,8 +6,12 @@
   app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 
     $stateProvider
-      .state("home", {
+      .state("initial", {
         url: "/",
+        templateUrl: "views/initial.html"
+      })
+      .state("home", {
+        url: "/home",
         templateUrl: "views/home.html"
       })
       .state("about", {
