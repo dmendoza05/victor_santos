@@ -1,28 +1,92 @@
 /* BASE STYLES */
+html{
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  transition:all 0.5s;
+}
 body{
-  width: 100%;
-  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
   margin: 0;
-  background: #036265;
-  background: -webkit-linear-gradient(#0D868A, #036265) no-repeat;
-  background: linear-gradient(#0D868A, #036265) no-repeat; 
+
+/*  background-image: -webkit-linear-gradient(#0D868A, #036265) no-repeat;
+  background-image: linear-gradient(#0D868A, #036265) no-repeat; */
 }
 
-/* navbar styles */
+/***** navbar styles *****/
 nav{
-  border: 3px solid red;
+  padding: 30px 0 15px 0;
+}
+nav > *{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: #036265;
 }
 nav ul{
+  max-width: 1000px;
+  height: 50px;
+  padding: 10px 0 0 0;
+  text-align: center;
+  list-style: none;
+
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  list-style: none;
 }
 nav li {
+  padding: 10px 0;
+
   -webkit-box-flex:1;
   -webkit-flex:1;
       -ms-flex:1;
           flex:1;
+  align-self: center;
 }
-/* navbar styles end */
+nav li a:hover{
+  padding: 0 22px 5px 22px;
+  border-bottom: 5px solid #036265;
+
+}
+nav li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #036265;
+}
+/***** navbar styles end *****/
+
+/***** home styles *****/
+#home-wrapper {
+  display: flex;
+}
+#home-wrapper .banner-img{
+  flex: 1 1 100%;
+  display: block;
+  position: relative;
+  max-width: 1000px;
+  height: 364px;
+  margin: 0 auto;
+  border-top: 5px solid #036265;
+  background: url(./assets/images/pt1.jpeg) no-repeat center; 
+  background-size: cover;
+}
+#home-wrapper .dialog {
+  position: absolute;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  bottom: -50px;
+  background: #036265;
+}
+#home-wrapper .dialog h4{
+  color: #fff;
+  font-size: 1.5em;
+  margin: 0;
+  flex: 1 1 100%;
+  align-self: center;
+  text-align: center;
+}
+/***** home styles end *****/
