@@ -39,6 +39,7 @@ nav ul{
 }
 nav li {
   padding: 10px 0;
+  position: relative;
 
   -webkit-box-flex:1;
   -webkit-flex:1;
@@ -46,11 +47,34 @@ nav li {
           flex:1;
   align-self: center;
 }
-nav li a:hover{
+nav li a {
+  padding: 10px 0;
+  font-size: 20px;
+  text-decoration: none;
+  color: #036265;
+  z-index: 1;
+}
+/*nav li a:hover{
   padding: 0 22px 5px 22px;
   border-bottom: 5px solid #036265;
-
+}*/
+nav li .underline{
+  position: absolute;
+  height: 100%;
+  width: 0;
+  top: 0;
+  background: #036265;
+  margin: 0 auto;
+  z-index: -99;
 }
+nav li:hover a{
+  color: #fff;
+}
+nav li:hover .underline{
+  width: 100%;
+  /*border-bottom: 5px solid #036265;*/
+}
+
 nav li a {
   font-size: 20px;
   text-decoration: none;
@@ -62,7 +86,7 @@ nav li a {
 #home-wrapper {
   display: flex;
 }
-#home-wrapper .banner-img{
+#home-wrapper .full-banner{
   flex: 1 1 100%;
   display: block;
   position: relative;
