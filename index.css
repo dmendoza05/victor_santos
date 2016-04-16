@@ -26,6 +26,7 @@ body{
 .view-wrapper .full-banner,
 .view-wrapper .half-banner{
   display: block;
+  height: inherit;
   position: relative;
   margin: 0 auto;
 }
@@ -34,6 +35,11 @@ body{
 }
 .view-wrapper .half-banner{
   flex: 1 1 50%; 
+}
+.view-wrapper .half-banner-img{
+  height: inherit;
+  background-repeat: no-repeat;
+  background-position: center; 
 }
 .view-wrapper .inside{
   position: absolute;
@@ -86,7 +92,7 @@ nav li {
   align-self: center;
 }
 nav li a {
-  padding: 10px 0;
+  display: block;
   font-size: 20px;
   text-decoration: none;
   color: #036265;
@@ -108,15 +114,20 @@ nav li:hover .underline{
   width: 100%;
   /*border-bottom: 5px solid #036265;*/
 }
-nav li a {
-  font-size: 20px;
-  text-decoration: none;
-  color: #036265;
-}
 
 /***** navbar styles end *****/
 
 /***** home styles *****/
+#home-wrapper .caption {
+  min-height: 80px;
+  width: 100%;
+  color: #fff;
+}
+#home-wrapper .caption h4{
+  font-size: 1.5em;
+  margin: 0;
+  flex: 1 1 100%;
+}
 #restore_function{
   height: 480px;
   background-image: url(./assets/images/pt1.jpeg);
@@ -125,24 +136,24 @@ nav li a {
   background-size: cover; 
 }
 #maximize-movement{
-/*  background: url(./assets/images/mobility.jpeg); 
-  background-repeat: no-repeat;
-  background-position: center; 
-  background-size: cover;*/
   background: #036265;
-  height: 400px;
+  height: 300px;
+  display: flex;
 }
-#home-2nd-half{
-
+#maximize-movement .half-banner.slogan{
+  flex: 1 1 40%;
 }
-#home-wrapper .caption {
-  height: 80px;
+#maximize-movement .half-banner.img{
+  flex: 1 1 60%;
+}
+.max-movement{
   width: 100%;
+  background: url(./assets/images/mobility.jpeg); 
 }
-#home-wrapper .caption h4{
-  color: #fff;
-  font-size: 1.5em;
-  margin: 0;
-  flex: 1 1 100%;
+#life-quality{
+  background: #fff;
+  height: 300px;
+  display: flex;
 }
+
 /***** home styles end *****/
