@@ -149,6 +149,7 @@ nav li:hover .underline{
 /***** navbar styles end *****/
 
 /***** home styles *****/
+
 #home-wrapper .caption {
   min-height: 80px;
   width: 100%;
@@ -176,7 +177,10 @@ nav li:hover .underline{
   background-image: url(./assets/images/pt1.jpeg);
 }
 #serving-community{
-  background-image: url(./assets/images/pt1.jpeg);
+  background-image: url(./assets/images/people.jpeg);
+}
+#serving-community .inside{
+  top: 0;
 }
 #maximize-movement{
   background: #036265;
@@ -226,8 +230,13 @@ nav li:hover .underline{
       -ms-flex: 1 1 55%;
           flex: 1 1 55%;
 }
+
 /***** home styles end *****/
-/***** home styles end *****/
-/***** home styles end *****/
+
+/***** about styles start *****/
+
+
+
+/***** about styles end *****/
 
 
