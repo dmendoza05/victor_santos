@@ -77,6 +77,10 @@ ul{
   text-align: center;
   margin-bottom: 0
 }
+.view-wrapper .caption img{
+  height: 75px;
+  margin: 10px;
+}
 .view-wrapper .caption p{
   width: 80%;
   margin: 1em auto 0 auto;
@@ -212,10 +216,6 @@ footer p{
   width: 100%;
   background: url(./assets/images/life.jpeg); 
 }
-.life-quality{
-  width: 100%;
-  background: url(./assets/images/life.jpeg); 
-}
 #life-quality{
     background: #fff;
   height: 350px;
@@ -247,7 +247,9 @@ footer p{
 /***** home styles end *****/
 
 /***** about styles start *****/
-
+#about-title{
+  background: url(./assets/images/mountain.jpg);
+}
 
 
 /***** about styles end *****/
