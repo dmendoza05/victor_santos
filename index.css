@@ -147,7 +147,20 @@ nav li:hover .underline{
 }
 
 /***** navbar styles end *****/
+/***** footer styles start *****/
 
+footer {
+  /*height: 60px;*/
+  background: #036265;
+  display: flex;
+}
+footer p{
+  align-self: center;
+  margin: 40px auto;
+  color: #fff;
+}
+
+/***** footer styles end *****/
 /***** home styles *****/
 
 #home-wrapper .caption {
