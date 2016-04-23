@@ -69,6 +69,11 @@ ul{
   left: 0;
   background: rgba(0,0,0,0.2);
 }
+.view-wrapper .caption{
+  min-height: 80px;
+  width: 100%;
+  color: #fff;
+}
 .view-wrapper .caption,
 .view-wrapper .caption > *{
   -webkit-align-self: center;
@@ -80,6 +85,14 @@ ul{
 .view-wrapper .caption img{
   height: 75px;
   margin: 10px;
+}
+.view-wrapper .caption h3{
+  font-size: 1.5em;
+  margin: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
 }
 .view-wrapper .caption p{
   width: 80%;
@@ -167,19 +180,6 @@ footer p{
 /***** footer styles end *****/
 /***** home styles *****/
 
-#home-wrapper .caption {
-  min-height: 80px;
-  width: 100%;
-  color: #fff;
-}
-#home-wrapper .caption h3{
-  font-size: 1.5em;
-  margin: 0;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 100%;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
-}
 #restore_function, #serving-community{
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -248,10 +248,26 @@ footer p{
 
 /***** about styles start *****/
 #about-title{
-  background: url(./assets/images/mountain.jpg);
+  display: flex;
+  height: 175px;
+  width: 100%;
+  background-image: url(./assets/images/dumbells.jpg);
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover; 
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
-
+#about-title .inside{
+  position: relative;
+}
 
 /***** about styles end *****/
 
+/***** services styles start *****/
 
+
+
+/***** services styles end *****/
