@@ -48,6 +48,13 @@ ul{
       -ms-flex: 1 1 100%;
           flex: 1 1 100%; 
 }
+.view-wrapper .full-banner > div{
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
 .view-wrapper .half-banner{
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 50%;
@@ -96,6 +103,7 @@ ul{
 }
 .view-wrapper .caption p{
   width: 80%;
+  line-height: 1.5;
   margin: 1em auto 0 auto;
 }
 /***** navbar styles *****/
@@ -181,10 +189,7 @@ footer p{
 /***** home styles *****/
 
 #restore_function, #serving-community{
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+
   height: 480px;
   background-repeat: no-repeat;
   background-position: center; 
@@ -248,26 +253,42 @@ footer p{
 
 /***** about styles start *****/
 #about-title{
-  display: flex;
   height: 175px;
   width: 100%;
   background-image: url(./assets/images/dumbells.jpg);
   background-repeat: no-repeat;
-  background-position: center; 
+  background-position: 0 10%; 
   background-size: cover; 
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
 }
 #about-title .inside{
   position: relative;
 }
-
+#about-body{
+  height: 400px;
+  background: #fff;
+}
+#about-body .about-body-img{
+  width: 100%;
+  background-image: url(./assets/images/aboutimg.jpeg);
+}
+#about-body .caption{
+  color: #036265;
+}
+#about-splash{
+  height: 400px;
+  background-image: url(./assets/images/kettlebells.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 10%; 
+  background-size: cover; 
+  display: flex;
+}
 /***** about styles end *****/
 
 /***** services styles start *****/
-
+.list-title{
+  width: 100%;
+  text-align: center;
+}
 
 
 /***** services styles end *****/
