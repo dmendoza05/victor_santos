@@ -1,4 +1,46 @@
-<div class="view-wrapper" id="about-wrapper">
+<div class="view-wrapper" id="contact-wrapper">
   <div class="full-banner">
+    <div id="contact-title">
+      <h3>Contact Us</h3>
+    </div>
+    <div id="contact-body">
+      <div class="half-banner">
+        <form action="mailto:balloomineers@yahoo.com" enctype="text/plain" method="post">
+        <div class="row">
+          <div>
+            <label for="exampleEmailInput">Name</label>
+            <input name="Name" type="text" placeholder="Your Name Here">
+          </div>
+          <div class="six columns">
+            <label for="exampleEmailInput">Contact Number</label>
+            <input name="Contact Number" type="number" placeholder="(818)-456-7890">
+          </div>
+        </div>
+        <div class="row">
+          <div class="eight columns">
+            <label for="exampleEmailInput">Email</label>
+            <input name="E-mail" type="email" placeholder="Your Email Here">
+          </div>
+        </div>
+        <label for="exampleMessage">Message</label>
+        <textarea class="body u-full-width" name="Body" placeholder="What's on your mind?" id="exampleMessage"></textarea>
+        <input class="btn-submit button-primary" type="submit" value="Submit">
+      </form>
+      </div>
+      <div class="half-banner img">
+        <div id="googleMap" style="width:500px;height:380px;"></div>
+      </div>
+    </div>
   </div>
 </div>
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>

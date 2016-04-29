@@ -10,16 +10,12 @@ html{
 body{
   font-family: 'Montserrat', sans-serif;
   margin: 0;
-
-/*  background-image: -webkit-linear-gradient(#0D868A, #036265) no-repeat;
-  background-image: linear-gradient(#0D868A, #036265) no-repeat; */
 }
 ul{
   list-style: none;
 }
 .wrapper{
   background: rgba(0,0,0,0.1);
-
 }
 .view-wrapper{
   max-width: 1200px;
@@ -51,9 +47,9 @@ ul{
 .view-wrapper .full-banner > div{
   display: flex;
   -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%; 
 }
 .view-wrapper .half-banner{
   -webkit-box-flex: 1;
@@ -289,6 +285,10 @@ footer p{
   width: 100%;
   text-align: center;
 }
-
-
 /***** services styles end *****/
+#contact-wrapper .full-banner{
+  flex-wrap: wrap;
+}
+#contact-title{
+
+}
