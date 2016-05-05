@@ -146,7 +146,7 @@ nav li {
 nav li a {
   display: block;
   position: relative;
-  font-size: 20px;
+  font-size: 1.5rem;
   padding: 10px 0;
   text-decoration: none;
   color: #036265;
@@ -290,5 +290,48 @@ footer p{
   flex-wrap: wrap;
 }
 #contact-title{
-
+  width: 450px;
+  height: 60px;
+  color: #fff;
+  background-color: #036262;
+  text-align: center;
+  display: block;
+  margin: 10px auto;
+  padding: 15px;
+}
+#contact-title h3{
+  margin: 0;
+}
+#contact-body{
+  min-height: 600px;
+}
+#contact-body form{
+  width: 100%;
+}
+#contact-body .form-div {
+text-align: center;
+}
+#contact-body .form-div input, #contact-body .form-div textarea{
+  width: 450px;
+  height: 60px;
+  margin: 10px 0;
+  padding: 0 10px;
+  border: 3px solid #036262;
+}
+#contact-body .form-div textarea{
+  resize: vertical;
+  max-height: 150px;
+  padding: 20px 10px;
+}
+textarea::-webkit-input-placeholder{
+}
+#location{
+    width: 620px;
+    background: #036262;
+    text-align: center;
+    margin: 10px;
+    color: #fff;
+}
+@media only screen and (max-width: 500px) {
+  
 }
