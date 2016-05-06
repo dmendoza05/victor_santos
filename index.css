@@ -1,11 +1,10 @@
 /* BASE STYLES */
 html{
   box-sizing: border-box;
+  font-size: 16px;
 }
 *, *:before, *:after {
   box-sizing: border-box;
-  -webkit-transition: all 0.5s;
-  transition:all 0.5s;
 }
 body{
   font-family: 'Montserrat', sans-serif;
@@ -100,7 +99,7 @@ ul{
 .view-wrapper .caption p{
   width: 80%;
   line-height: 1.5;
-  margin: 1em auto 0 auto;
+  margin: 25px auto 0 auto;
 }
 /***** navbar styles *****/
 nav{
@@ -110,6 +109,7 @@ nav{
 }
 nav > *{
   display: block;
+  font-size: 1.5rem;
   margin: 0 auto;
   text-align: center;
   color: #036265;
@@ -134,7 +134,7 @@ nav ul{
 }
 nav li {
   position: relative;
-
+  overflow: hidden;
   -webkit-box-flex:1;
   -webkit-flex:1;
       -ms-flex:1;
@@ -142,6 +142,7 @@ nav li {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
           align-self: center;
+
 }
 nav li a {
   display: block;
@@ -151,14 +152,22 @@ nav li a {
   text-decoration: none;
   color: #036265;
   z-index: 999;
+  -webkit-transition: ease 0.8s;
+          transition: ease 0.8s;
 }
-nav li .underline{
+nav li .underline, nav li .underline2{
   position: absolute;
   height: 100%;
   width: 0;
   top: 0;
   background: #036265;
   margin: 0 auto;
+  -webkit-transition: ease 0.8s;
+          transition: ease 0.8s;
+}
+nav li .underline2{
+  width: 100%;
+  left: 100%;
 }
 nav li:hover a{
   color: #fff;
@@ -166,18 +175,22 @@ nav li:hover a{
 nav li:hover .underline{
   width: 100%;
 }
+nav li:hover .underline2{
+  left: 0;
+}
 
 /***** navbar styles end *****/
 /***** footer styles start *****/
 
 footer {
-  /*height: 60px;*/
   background: #036265;
-  display: flex;
+}
+footer div{
+  text-align: center;
+  padding: 30px 0;
 }
 footer p{
-  align-self: center;
-  margin: 40px auto;
+  margin: 0;
   color: #fff;
 }
 
@@ -317,13 +330,22 @@ text-align: center;
   margin: 10px 0;
   padding: 0 10px;
   border: 3px solid #036262;
+  color: #036265;
 }
 #contact-body .form-div textarea{
   resize: vertical;
   max-height: 150px;
   padding: 20px 10px;
 }
-textarea::-webkit-input-placeholder{
+#contact-body .form-div .btn-submit{
+  background: #fff;
+}
+#contact-body .form-div .btn-submit:hover{
+  background: #036265;
+  color: #fff;
+}
+::-webkit-input-placeholder{
+  color: #036265;
 }
 #location{
     width: 620px;
