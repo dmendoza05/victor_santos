@@ -1,7 +1,7 @@
 /* BASE STYLES */
 html{
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 15px;
 }
 *, *:before, *:after {
   box-sizing: border-box;
@@ -51,6 +51,7 @@ ul{
           flex: 1 1 100%; 
 }
 .view-wrapper .half-banner{
+  padding: 50px 0;
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 50%;
       -ms-flex: 1 1 50%;
@@ -101,6 +102,8 @@ ul{
   line-height: 1.5;
   margin: 25px auto 0 auto;
 }
+/***** base styles end *****/
+
 /***** navbar styles *****/
 nav{
   background: #fff;
@@ -193,12 +196,15 @@ footer p{
   margin: 0;
   color: #fff;
 }
+footer a{
+  text-decoration: none;
+  color: #fff;
+}
 
 /***** footer styles end *****/
 /***** home styles *****/
 
 #restore_function, #serving-community{
-
   height: 480px;
   background-repeat: no-repeat;
   background-position: center; 
@@ -215,7 +221,6 @@ footer p{
 }
 #maximize-movement{
   background: #036265;
-  height: 350px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -231,8 +236,7 @@ footer p{
   background: url(./assets/images/life.jpeg); 
 }
 #life-quality{
-    background: #fff;
-  height: 350px;
+  background: #fff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -299,6 +303,8 @@ footer p{
   text-align: center;
 }
 /***** services styles end *****/
+
+/***** contact styles end *****/
 #contact-wrapper .full-banner{
   flex-wrap: wrap;
 }
@@ -348,12 +354,20 @@ text-align: center;
   color: #036265;
 }
 #location{
-    width: 620px;
-    background: #036262;
-    text-align: center;
-    margin: 10px;
-    color: #fff;
+  width: 620px;
+  background: #036262;
+  text-align: center;
+  margin: 10px;
+  color: #fff;
 }
-@media only screen and (max-width: 500px) {
-  
+/***** contact styles end *****/
+@media only screen and (min-width: 720px) and (max-width: 950px) {
+  html{
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 719px) {
+  html{
+    font-size: 11px;
+  }
 }
