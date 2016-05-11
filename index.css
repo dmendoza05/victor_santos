@@ -120,7 +120,7 @@ nav > *{
 nav h1{
 
 font-family: 'Mate SC', serif;
-font-size: 3rem;
+font-size: 2.7rem;
 font-weight: 900;
 }
 nav ul{
@@ -365,9 +365,23 @@ text-align: center;
   html{
     font-size: 13px;
   }
+  /***** home styles *****/
+
+  #restore_function, #serving-community{
+    height: 360px;
+  }
+
+  /***** end home styles *****/
 }
 @media only screen and (max-width: 719px) {
   html{
-    font-size: 11px;
+    font-size: 10px;
   }
+  /***** home styles *****/
+
+  #restore_function, #serving-community{
+    height: 240px;
+  }
+
+  /***** end home styles *****/
 }
