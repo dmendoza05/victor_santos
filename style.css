@@ -1,0 +1,284 @@
+html{
+  box-sizing: border-box;
+  font-size: 15px;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+ul{
+  list-style: none;
+  padding: 0;
+}
+.wrapper{
+  background: rgba(0,0,0,0.1);
+}
+.view-wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.view-wrapper .full-banner{
+  display: table;
+  width: 100%;
+}
+.view-wrapper .full-banner > *{
+}
+.view-wrapper .full-banner,
+.view-wrapper .half-banner{
+  position: relative;
+  margin: 0 auto;
+}
+.view-wrapper .half-banner{
+  width: 50%;
+  height: 400px;
+  display: table-cell;
+  text-align: center;
+}
+.view-wrapper .caption{
+  width: 100%;
+  color: #fff;
+}
+.view-wrapper .caption img{
+  width: 90px;
+  color: #fff;
+}
+.view-wrapper .inside{
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.2);
+}
+.view-wrapper .inside h3{
+  margin: 0;
+  text-align: center;
+  padding: 30px 0;
+}
+.view-wrapper .slogan{
+  vertical-align: middle;
+}
+.view-wrapper .half-banner .caption p{
+  margin: 10px 50px;
+}
+/***** navbar styles *****/
+nav{
+  background: #fff;
+  padding: 30px 0 15px 0;
+  border-bottom: 5px solid #036265;
+}
+nav > *{
+  display: block;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  text-align: center;
+  color: #036265;
+}
+nav h1{
+
+font-family: 'Mate SC', serif;
+font-size: 2.7rem;
+font-weight: 900;
+}
+nav ul{
+  max-width: 1000px;
+  height: 50px;
+  padding: 10px 0 0 0;
+  text-align: center;
+  list-style: none;
+
+}
+nav li {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+nav li a {
+  display: block;
+  position: relative;
+  font-size: 1.5rem;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #036265;
+  z-index: 999;
+  -webkit-transition: ease 0.8s;
+          transition: ease 0.8s;
+}
+nav li .underline, nav li .underline2{
+  position: absolute;
+  height: 100%;
+  width: 0;
+  top: 0;
+  background: #036265;
+  margin: 0 auto;
+  -webkit-transition: ease 0.8s;
+          transition: ease 0.8s;
+}
+nav li .underline2{
+  width: 100%;
+  left: 100%;
+}
+nav li:hover a{
+  color: #fff;
+}
+nav li:hover .underline{
+  width: 100%;
+}
+nav li:hover .underline2{
+  left: 0;
+}
+
+/***** navbar styles end *****/
+/***** footer styles start *****/
+
+footer {
+  background: #036265;
+}
+footer div{
+  text-align: center;
+  padding: 30px 0;
+}
+footer p{
+  margin: 0;
+  color: #fff;
+}
+footer a{
+  text-decoration: none;
+  color: #fff;
+}
+
+/***** footer styles end *****/
+/***** home styles *****/
+
+#restore_function, #serving-community{
+  height: 480px;
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover; 
+}
+#restore_function{
+  background-image: url(./assets/images/pt1.jpeg);
+}
+#serving-community{
+  background-image: url(./assets/images/people.jpeg);
+}
+#serving-community .inside{
+  top: 0;
+}
+#maximize-movement, #life-quality{
+  display: table-row;
+}
+#maximize-movement{
+  background: #036265;
+}
+.max-movement{
+  background: url(./assets/images/mobility.jpeg); 
+}
+.life-quality{
+  background: url(./assets/images/life.jpeg); 
+}
+.max-movement, .life-quality{
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center;
+}
+#life-quality{
+  background: #fff;
+}
+#life-quality .caption{
+  color: #036265;
+}
+
+/***** home styles end *****/
+/***** about styles start *****/
+#about-wrapper .half-banner.slogan{
+  width: 60%;
+}
+#about-wrapper .half-banner.img{
+  width: 40%;
+}
+#about-title, #about-splash{
+  height: 440px;
+  background-repeat: no-repeat;
+  background-position: 0 10%; 
+  background-size: cover;
+}
+#about-title{
+  background-image: url(./assets/images/dumbells.jpg);
+}
+#about-splash{
+  background-image: url(./assets/images/kettlebells.jpg);
+}
+#about-body{
+  height: 400px;
+  background: #fff;
+}
+#about-body .about-body-img{
+  width: 100%;
+  height: 400px;
+  background-image: url(./assets/images/aboutimg.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;  
+}
+#about-body .caption{
+  color: #036265;
+}
+
+/***** about styles end *****/
+/***** services styles start *****/
+#services-wrapper h3{
+  text-align: center;
+  font-size: 1.5rem;
+  color: #036265;
+}
+#main-list{
+  margin: 0 auto;
+  padding: 20px 0 60px 0;
+  max-width: 945px;
+}
+#main-list h3{
+  margin: 0;
+  padding: 10px 0;
+  background: #036265;
+  color: #fff;
+}
+#main-list > li{
+  width: 450px;
+  height: 240px;
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  vertical-align: middle;
+  background: #fff;
+}
+#main-list ul li{
+  margin: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***** services styles end *****/
