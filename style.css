@@ -230,6 +230,7 @@ footer a{
 
 /***** about styles end *****/
 /***** services styles start *****/
+
 #services-wrapper h3{
   text-align: center;
   font-size: 1.5rem;
@@ -259,26 +260,45 @@ footer a{
   margin: 10px 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /***** services styles end *****/
+/*****  contact styles start *****/
+#contact-wrapper  
+  padding: 40px 0
+#contact-body {
+  display: table-row;
+}
+#location{
+  background: #036265;
+  color: #fff;
+}
+#location h3 {
+  margin: 0;
+  padding: 20px 0;
+}
+#location p{
+  margin: 0;
+  padding: 5px 0;
+}
+/*****  contact styles end *****/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
