@@ -1,3 +1,6 @@
+/*****************************/
+/***** base styles start *****/
+/*****************************/
 html{
   box-sizing: border-box;
   font-size: 15px;
@@ -33,7 +36,7 @@ ul{
 }
 .view-wrapper .half-banner{
   width: 50%;
-  height: 400px;
+  height: 24.5rem;
   display: table-cell;
   text-align: center;
 }
@@ -42,7 +45,7 @@ ul{
   color: #fff;
 }
 .view-wrapper .caption img{
-  width: 90px;
+  width: 6rem;
   color: #fff;
 }
 .view-wrapper .inside{
@@ -50,18 +53,52 @@ ul{
   bottom: 0;
   background: rgba(0,0,0,0.2);
 }
-.view-wrapper .inside h3{
+.view-wrapper .inside > *{
   margin: 0;
   text-align: center;
-  padding: 30px 0;
+  padding: 2rem 0;
 }
 .view-wrapper .slogan{
   vertical-align: middle;
 }
 .view-wrapper .half-banner .caption p{
-  margin: 10px 50px;
+  margin: 10px 35px;
 }
-/***** navbar styles *****/
+
+/*********** MEDIA QUERIES ***********/
+@media only screen and (min-width: 720px) and (max-width: 950px) {
+  html{
+    font-size: 13px;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 719px) {
+  html{
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  html{
+    font-size: 9px;
+  }
+  .view-wrapper .half-banner{
+    width: 100%;
+    display: table-row-group;
+  }
+  .view-wrapper .half-banner.img{
+    height: 200px;
+    display: table-header-group;
+  }
+  .view-wrapper .half-banner .caption p{
+    margin: 10px 35px 35px;
+  }
+}
+
+/*******************************/
+/***** base styles end *********/
+/*******************************/
+/***** navbar styles start *****/
+/*******************************/
+
 nav{
   background: #fff;
   padding: 30px 0 15px 0;
@@ -130,8 +167,11 @@ nav li:hover .underline2{
   left: 0;
 }
 
-/***** navbar styles end *****/
+/******************************/
+/***** navbar styles end ******/
+/******************************/
 /***** footer styles start *****/
+/******************************/
 
 footer {
   background: #036265;
@@ -153,7 +193,7 @@ footer a{
 /***** home styles *****/
 
 #restore_function, #serving-community{
-  height: 480px;
+  height: 28rem;
   background-repeat: no-repeat;
   background-position: center; 
   background-size: cover; 
@@ -168,7 +208,6 @@ footer a{
   top: 0;
 }
 #maximize-movement, #life-quality{
-  display: table-row;
 }
 #maximize-movement{
   background: #036265;
@@ -181,7 +220,7 @@ footer a{
 }
 .max-movement, .life-quality{
   width: 100%;
-  height: 100%;
+  height: inherit;
   background-repeat: no-repeat;
   background-size: 90%;
   background-position: center;
@@ -192,9 +231,22 @@ footer a{
 #life-quality .caption{
   color: #036265;
 }
+/*********** MEDIA QUERIES ***********/
+@media only screen and (min-width: 720px) and (max-width: 950px) {
+}
+@media only screen and (min-width: 501px) and (max-width: 719px) {
+}
+@media only screen and (max-width: 500px) {
+  .max-movement, .life-quality{
+    background-size: 80%;
+  }
+}
 
-/***** home styles end *****/
+/******************************/
+/***** home styles end ********/
+/******************************/
 /***** about styles start *****/
+/******************************/
 #about-wrapper .half-banner.slogan{
   width: 60%;
 }
@@ -222,14 +274,18 @@ footer a{
   height: 400px;
   background-image: url(./assets/images/aboutimg.jpeg);
   background-repeat: no-repeat;
-  background-position: center;  
+  background-position: center; 
+  background-size: 75%; 
 }
 #about-body .caption{
   color: #036265;
 }
 
-/***** about styles end *****/
+/*********************************/
+/***** about styles end **********/
+/*********************************/
 /***** services styles start *****/
+/*********************************/
 
 #services-wrapper h3{
   text-align: center;
@@ -248,50 +304,120 @@ footer a{
   color: #fff;
 }
 #main-list > li{
-  width: 450px;
+  width: 47.62%;
   height: 240px;
   display: inline-block;
   text-align: center;
   margin: 10px;
   vertical-align: middle;
   background: #fff;
+  box-shadow: 1px 1px 13px rgba(0,0,0,0.26)
 }
 #main-list ul li{
   margin: 10px 0;
 }
 
-/***** services styles end *****/
+/*********************************/
+/***** services styles end *******/
+/*********************************/
 /*****  contact styles start *****/
-#contact-wrapper  
-  padding: 40px 0
+/*********************************/
+
+#contact-wrapper {
+  padding: 130px 0;
+}  
+#contact-wrapper .half-banner{
+  display: block;
+  float: left;
+  height: auto;
+}
 #contact-body {
   display: table-row;
 }
-#location{
+#contact-body form{
+  background: #fff;
+  padding-bottom: 25px;
+}
+.form-div{
+  display: table;
+  margin: 10px auto;
+  width: 465px;
+}
+.form-div > div{
+  display: table-row;
+}
+.form-div label, 
+.form-div input,
+.form-div textarea{
+  display: table-cell;
+  vertical-align: middle;
+}
+.form-div label{
+  width: 35%;
+  color: #fff;
+  background: #036265;
+  height: 50px;
+}
+.form-div input, 
+.form-div textarea{
+  width: 100%;
+  height: 50px;
+  border: 1px solid #036265;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+}
+.form-div input:focus, 
+.form-div textarea:focus{
+  box-shadow: 0 0 5px #036265;
+}
+.form-div textarea{
+  resize: vertical;
+}
+.btn-submit{
   background: #036265;
   color: #fff;
 }
-#location h3 {
+#location{
+  width: 520px;
+  background: #036265;
+  color: #fff;
+  margin: 0 auto;
+}
+#location h3, #contact-title h3{
   margin: 0;
+  color: #fff;
   padding: 20px 0;
+  background: #036265;
 }
 #location p{
   margin: 0;
   padding: 5px 0;
 }
-/*****  contact styles end *****/
-
-
-
-
-
-
-
-
-
-
-
-
+#location iframe{ 
+  width: 500px;
+  height: 450px;
+ }
+#social img{
+  height: 40px;
+}
+/*********** MEDIA QUERIES ***********/
+@media only screen and (min-width: 956px) and (max-width: 1040px) {
+}
+@media only screen and (min-width: 720px) and (max-width: 950px) {
+}
+@media only screen and (min-width: 501px) and (max-width: 719px) {
+}
+@media only screen and (max-width: 500px) {
+  .max-movement, .life-quality{
+    background-size: 80%;
+  }
+}
+/*********************************/
+/*****  contact styles end *******/
+/*********************************/
 
 
 
