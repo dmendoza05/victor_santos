@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  var app = angular.module('pt_website', ['ui.router', 'pt_controllers', 'pt-directive']);
+  var app = angular.module('pt_website', ['ui.router', 'pt_controllers', 'pt-directives']);
 
   app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 

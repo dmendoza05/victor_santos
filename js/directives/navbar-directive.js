@@ -11,6 +11,7 @@
       },
       templateUrl: "views/navbar.html",
       link: function(scope, elem, attr) {
+        
       }
     }
   }]); // end navbar
