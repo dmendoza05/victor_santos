@@ -16,6 +16,22 @@ ul{
   list-style: none;
   padding: 0;
 }
+header {
+  background: #fff;
+  padding: 15px 0 0;
+}
+header > *{
+  display: block;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  text-align: center;
+  color: #036265;
+}
+header h1{
+  font-family: 'Mate SC', serif;
+  font-size: 2.7rem;
+  font-weight: 900;
+}
 .wrapper{
   background: rgba(0,0,0,0.1);
 }
@@ -39,6 +55,7 @@ ul{
   height: 24.5rem;
   display: table-cell;
   text-align: center;
+  vertical-align: middle;
 }
 .view-wrapper .caption{
   width: 100%;
@@ -89,7 +106,7 @@ ul{
     display: table-header-group;
   }
   .view-wrapper .half-banner .caption p{
-    margin: 10px 35px 35px;
+    margin: 10px 35px 20px;
   }
 }
 
@@ -101,7 +118,6 @@ ul{
 
 nav{
   background: #fff;
-  padding: 30px 0 15px 0;
   border-bottom: 5px solid #036265;
 }
 nav > *{
@@ -112,18 +128,16 @@ nav > *{
   color: #036265;
 }
 nav h1{
-
-font-family: 'Mate SC', serif;
-font-size: 2.7rem;
-font-weight: 900;
+  font-family: 'Mate SC', serif;
+  font-size: 2.7rem;
+  font-weight: 900;
 }
 nav ul{
   max-width: 1000px;
-  height: 50px;
-  padding: 10px 0 0 0;
+  padding: 10px 0;
   text-align: center;
   list-style: none;
-
+  overflow: auto;
 }
 nav li {
   position: relative;
@@ -157,13 +171,13 @@ nav li .underline2{
   width: 100%;
   left: 100%;
 }
-nav li:hover a{
+nav li.active a{
   color: #fff;
 }
-nav li:hover .underline{
+nav li.active .underline{
   width: 100%;
 }
-nav li:hover .underline2{
+nav li.active .underline2{
   left: 0;
 }
 
@@ -254,7 +268,7 @@ footer a{
   width: 40%;
 }
 #about-title, #about-splash{
-  height: 440px;
+  height: 28rem;
   background-repeat: no-repeat;
   background-position: 0 10%; 
   background-size: cover;
@@ -266,12 +280,11 @@ footer a{
   background-image: url(./assets/images/kettlebells.jpg);
 }
 #about-body{
-  height: 400px;
   background: #fff;
 }
 #about-body .about-body-img{
   width: 100%;
-  height: 400px;
+  height: 300px;
   background-image: url(./assets/images/aboutimg.jpeg);
   background-repeat: no-repeat;
   background-position: center; 
@@ -280,7 +293,34 @@ footer a{
 #about-body .caption{
   color: #036265;
 }
-
+/*********** MEDIA QUERIES ***********/
+@media only screen and (min-width: 720px) and (max-width: 950px) {
+}
+@media only screen and (min-width: 501px) and (max-width: 719px) {
+  .view-wrapper#about-wrapper .half-banner{
+    width: 100%;
+    display: table-row-group;
+  }
+  .view-wrapper#about-wrapper .half-banner.img{
+    height: 200px;
+    display: table-header-group;
+  }
+  .view-wrapper#about-wrapper .half-banner .caption p{
+    margin: 10px 35px 20px;
+  }
+  #about-body .about-body-img{
+    height: 300px;
+    background-size: 255px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #about-body .about-body-img{
+    height: inherit;
+  }
+  #about-body .about-body-img{
+    background-size: 43%;
+  }
+}
 /*********************************/
 /***** about styles end **********/
 /*********************************/
@@ -295,7 +335,8 @@ footer a{
 #main-list{
   margin: 0 auto;
   padding: 20px 0 60px 0;
-  max-width: 945px;
+  max-width: 90%;
+  overflow: auto;
 }
 #main-list h3{
   margin: 0;
@@ -304,11 +345,12 @@ footer a{
   color: #fff;
 }
 #main-list > li{
-  width: 47.62%;
+  width: 47%;
   height: 240px;
-  display: inline-block;
+  float: left;
+  display: inline;
   text-align: center;
-  margin: 10px;
+  margin: 1.5%;
   vertical-align: middle;
   background: #fff;
   box-shadow: 1px 1px 13px rgba(0,0,0,0.26)
@@ -316,7 +358,26 @@ footer a{
 #main-list ul li{
   margin: 10px 0;
 }
-
+@media only screen and (min-width: 720px) and (max-width: 950px) {
+}
+@media only screen and (min-width: 501px) and (max-width: 719px) {
+  #main-list > li {
+    height: 190px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #main-list { 
+    padding: 0 0 60px;
+  }
+  #main-list > li {
+    float: none;
+    display: block;
+    width: 100%;
+    max-width: 275px;
+    height: 180px;
+    margin: 10px auto;
+  }
+}
 /*********************************/
 /***** services styles end *******/
 /*********************************/
@@ -324,26 +385,35 @@ footer a{
 /*********************************/
 
 #contact-wrapper {
-  padding: 130px 0;
+  padding: 30px 0 0 0;
 }  
+#contact-wrapper h3{
+  margin: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #036265;
+}
 #contact-wrapper .half-banner{
+  height: auto;
+  padding: 30px 0;
   display: block;
   float: left;
-  height: auto;
 }
 #contact-body {
   display: table-row;
 }
-#contact-body form{
+form {
+  width: 100%;
+  height: 100%;
   background: #fff;
-  padding-bottom: 25px;
 }
 .form-div{
   display: table;
   margin: 10px auto;
-  width: 465px;
+  width: 97%;
 }
 .form-div > div{
+  height: 50px;
   display: table-row;
 }
 .form-div label, 
@@ -356,13 +426,14 @@ footer a{
   width: 35%;
   color: #fff;
   background: #036265;
-  height: 50px;
 }
 .form-div input, 
 .form-div textarea{
   width: 100%;
-  height: 50px;
+  height: inherit;
   border: 1px solid #036265;
+  -webkit-border-radius: 0;
+  border-radius: 0;
   -webkit-transition: all 0.30s ease-in-out;
   -moz-transition: all 0.30s ease-in-out;
   -ms-transition: all 0.30s ease-in-out;
@@ -392,33 +463,57 @@ footer a{
   padding: 20px 0;
   background: #036265;
 }
+#location iframe{ 
+  width: 95%;
+  height: 450px;
+ }
 #location p{
   margin: 0;
   padding: 5px 0;
 }
-#location iframe{ 
-  width: 500px;
-  height: 450px;
- }
-#social img{
-  height: 40px;
+.address {
+  padding: 0 0 10PX 0;
 }
 /*********** MEDIA QUERIES ***********/
+@media only screen and (max-width: 1040px) {
+  #contact-wrapper .half-banner {
+    width: 100%;
+    padding: 30px 0 15px 0;
+  }
+  form {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #location{
+    width: 80%;
+  }
+  .form-div > div{
+    height: 40px;
+  }
+}
 @media only screen and (min-width: 956px) and (max-width: 1040px) {
 }
 @media only screen and (min-width: 720px) and (max-width: 950px) {
+
 }
 @media only screen and (min-width: 501px) and (max-width: 719px) {
+  #location iframe {
+    width: 95%;
+    height: 375px;
+  }
 }
 @media only screen and (max-width: 500px) {
   .max-movement, .life-quality{
     background-size: 80%;
   }
+  #location iframe {
+    width: 95%;
+    height: 350px;
+  }
 }
 /*********************************/
 /*****  contact styles end *******/
 /*********************************/
-
 
 
 

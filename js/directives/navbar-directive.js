@@ -6,13 +6,23 @@
   app.directive('navbar', [function() {
     return {
       restrict: 'E',
-      scope: {
-        'model': '='
-      },
-      templateUrl: "views/navbar.html",
-      link: function(scope, elem, attr) {
-        
-      }
+      templateUrl: "views/navbar.html"
     }
   }]); // end navbar
+
+  app.directive('navbarTabs', [function() {
+    return {
+      restrict: 'A',
+      link: function(scope, element, attr) {
+        var tab = document.getElementsByClassName('active');
+
+        element.bind("click", function() {
+          if(tab[0]){
+            tab[0].removeAttribute('class'); 
+          };
+          element.addClass('active');
+        });
+      }
+    }
+  }]);
 })(); // end closure

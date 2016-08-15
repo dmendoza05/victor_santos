@@ -3,7 +3,7 @@
 
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="viewport" content="initial-scale=1, width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no" />
   <meta name="description" content="Victor Santos Physical Therapy Rehabilitation services specializing in orthopedic, neurological, workers compensation, post sugery, general debilitation">
   <base href="/">
   <title> Victor Sandtos PT</title>
@@ -16,7 +16,11 @@
 <body>
 
   <div class="wrapper" ng-controller="MainController as main">
+    <header>
+      <h1>Victor Santos Physical Therapy</h1>
+      <h2>Rehabilitation Services</h2>
     <navbar></navbar>
+    </header>
     <div ui-view></div>
   </div>
   <footer>
@@ -25,7 +29,18 @@
       <p>Website by <a href="http://danielmendoza.io">Daniel Mendoza</a></p>
     </div>
   </footer>
-
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyC-sXVYzxovpD4mx2fXDXczVTl52uKgTL8",
+      authDomain: "vspt01-52a4d.firebaseapp.com",
+      databaseURL: "https://vspt01-52a4d.firebaseio.com",
+      storageBucket: "vspt01-52a4d.appspot.com",
+    };
+    firebase.initializeApp(config);
+  </script>
   <!-- Bower Components -->
   <script src="/bower_components/angular/angular.min.js"></script>
   <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
