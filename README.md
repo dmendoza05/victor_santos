@@ -1,6 +1,7 @@
 # victor_santos
 
 Revamping this website: http://victorsantospt.com/
+Deployed website: https://vsantospt.com/#/
 
 Goals:
 - New and Better Styles
@@ -9,5 +10,6 @@ Goals:
 Technologies Used:
 AngularJS
 HTML5
-CSS3 (Page is heavily relying on Flexbox)
+CSS3 
 Javascript
+Firebase
